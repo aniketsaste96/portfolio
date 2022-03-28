@@ -1,0 +1,18 @@
+body {
+  background: #0d0d0d;
+  padding-bottom: 6.5rem;
+}
+
+.thank {
+  color: crimson;
+}
+
+.thank span {
+  color: white;
+  font-size: 50px;
+}
+
+.thankyou_div {
+  text-align: center;
+  margin-top: 10%;
+}

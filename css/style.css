@@ -828,7 +828,7 @@ section {
 .cursor {
   width: 20px;
   height: 20px;
-  border: 2px solid white;
+  border: 3px solid crimson;
   border-radius: 80%;
   position: absolute;
   transition-duration: 200ms;
@@ -883,5 +883,5 @@ section {
 
 .expand {
   animation: cursorAnim3 0.5s forwards;
-  border: 2px solid red;
+  border: 2px solid crimson;
 }

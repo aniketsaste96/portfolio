@@ -32,7 +32,7 @@ html::-webkit-scrollbar-thumb {
 body {
   background: #0d0d0d;
   padding-bottom: 6.5rem;
-
+  overflow: hidden !important;
   cursor: url("../images/cursor.png"), auto !important;
 }
 
@@ -134,6 +134,8 @@ section {
   flex-wrap: wrap;
   gap: 4rem;
   min-height: calc(100vh - 6.5rem);
+  position: absolute;
+  z-index: 999;
 }
 
 .home .image {
@@ -751,7 +753,7 @@ section {
 
 .chevron {
   position: absolute;
-  width: 80px;
+  width: 100px;
   height: 10px;
   opacity: 0;
   transform: scale3d(0.6, 0.6, 0.6);
@@ -884,4 +886,25 @@ section {
 .expand {
   animation: cursorAnim3 0.5s forwards;
   border: 2px solid crimson;
+}
+
+/* line trail  */
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+line {
+  stroke: #3f51b5;
+  stroke-width: 2;
+}
+
+/* animation */
+
+#animation:hover {
+  text-shadow: 0 13.36px 9.896px #c4b59d, 0 -2px 1px #fff;
+  transition: 0.5s;
 }

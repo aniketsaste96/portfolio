@@ -32,8 +32,8 @@ html::-webkit-scrollbar-thumb {
 body {
   background: #0d0d0d;
   padding-bottom: 6.5rem;
-  overflow: hidden !important;
   cursor: url("../images/cursor.png"), auto !important;
+  overflow: hidden;
 }
 
 section {
@@ -908,3 +908,5 @@ line {
   text-shadow: 0 13.36px 9.896px #c4b59d, 0 -2px 1px #fff;
   transition: 0.5s;
 }
+
+/* portfolio page */

@@ -1,3 +1,4 @@
+//Page transition
 import barba from '@barba/core';
 barba.init({
     transitions: [{

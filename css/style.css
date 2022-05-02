@@ -916,3 +916,43 @@ canvas {
   left: 0;
   z-index: -1;
 }
+
+/* Preloader */
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#preLoader {
+  position: relative;
+  color: crimson;
+  font-size: 4em;
+  letter-spacing: 5px;
+  border-bottom: 16px solid #333;
+  line-height: 1.4;
+  font-family: consolas;
+  text-transform: uppercase;
+  height: 100vh;
+  margin-top: 45vh;
+}
+#preLoader::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: crimes;
+  border-bottom: 16px solid crimson;
+  animation: lod 2s linear infinite;
+  overflow: hidden;
+}
+@keyframes lod {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

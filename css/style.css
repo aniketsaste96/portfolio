@@ -957,3 +957,33 @@ canvas {
     width: 100%;
   }
 }
+
+/* rocket  */
+
+#rocket {
+  height: 190px;
+  z-index: 1;
+}
+
+#rocket {
+  animation: MoveUpDown 5s linear infinite;
+  position: relative;
+  top: 10%;
+  right: 0%;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 40px;
+  }
+}
+
+.rocket {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

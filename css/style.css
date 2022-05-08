@@ -935,8 +935,8 @@ canvas {
   line-height: 1.4;
   font-family: consolas;
   text-transform: uppercase;
-  /* height: 100%; */
-  /* margin-top: 45vh; */
+  height: 100vh;
+  margin-top: 45vh;
 }
 #preLoader::before {
   content: attr(data-text);
@@ -961,7 +961,7 @@ canvas {
 /* rocket  */
 
 #rocket {
-  height: 190px;
+  height: 120px;
   z-index: 1;
 }
 

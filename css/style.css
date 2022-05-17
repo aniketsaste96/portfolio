@@ -966,7 +966,7 @@ canvas {
 }
 
 #rocket {
-  animation: MoveUpDown 5s linear infinite;
+  animation: MoveUpDown 8s linear infinite;
   position: relative;
   top: 10%;
   right: 0%;
@@ -978,7 +978,7 @@ canvas {
     bottom: 0;
   }
   50% {
-    bottom: 40px;
+    bottom: 60px;
   }
 }
 

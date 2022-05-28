@@ -13,7 +13,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--   ScrollReveal Animation Start -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
 
+    <!--   ScrollReveal Animation End -->
     <!-- custom css file link  -->
     <style>
         :root {
@@ -71,7 +74,7 @@
                 some values in ever growing business world in india and beyond.</p>
 
 
-            <a id="aboutMe" href="/about.html" class="btn aboutme"> about me <i class="fas fa-user"></i> </a>
+            <a id="aboutMe" href="/about.html" class="btn aboutme slideTop"> about me <i class="fas fa-user"></i> </a>
         </div>
 
     </section>
@@ -246,7 +249,17 @@
 
     </script>
     <script src="Home.js"></script>
+    <script>
+        var slideTop = {
+            distance: '550%',
+            origin: 'top',
+            opacity: null,
+            delay: 1000
+        };
 
+        ScrollReveal({ reset: true });
+        ScrollReveal().reveal('.slideTop', slideTop);
+    </script>
 </body>
 <!-- <script src="script.js"></script> -->
 

@@ -17,6 +17,9 @@
     <script src="https://unpkg.com/scrollreveal@4"></script>
 
     <!--   ScrollReveal Animation End -->
+    <!--   Text Animation-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- custom css file link  -->
     <style>
         :root {
@@ -43,12 +46,12 @@
 
     <!-- navbar section starts  -->
 
-    <nav class="navbar">
-        <a href="home.html"> <i class="fas fa-home"></i> <span>home</span> </a>
-        <a href="about.html"> <i class="fas fa-user"></i> <span>about</span> </a>
-        <a href="portfolio.html"> <i class="fas fa-briefcase"></i> <span>Projects</span> </a>
+    <nav class="navbar ml15">
+        <a href="home.html"> <i class="fas fa-home word"></i> <span>home</span> </a>
+        <a href="about.html"> <i class="fas fa-user word"></i> <span>about</span> </a>
+        <a href="portfolio.html"> <i class="fas fa-briefcase word"></i> <span>Projects</span> </a>
 
-        <a href="contact.html"> <i class="fas fa-address-book"></i> <span>contact</span> </a>
+        <a href="contact.html"> <i class="fas fa-address-book word"></i> <span>contact</span> </a>
     </nav>
 
     <!-- navbar section ends -->
@@ -260,6 +263,23 @@
 
         ScrollReveal({ reset: true });
         ScrollReveal().reveal('.slideTop', slideTop);
+
+        //text animation
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml15 .word',
+                scale: [14, 1],
+                opacity: [0, 1],
+                easing: "easeOutCirc",
+                duration: 800,
+                delay: (el, i) => 800 * i
+            }).add({
+                targets: '.ml15',
+                opacity: 100,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
     </script>
 </body>
 <!-- <script src="script.js"></script> -->

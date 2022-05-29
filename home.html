@@ -50,7 +50,6 @@
         <a href="home.html"> <i class="fas fa-home word"></i> <span>home</span> </a>
         <a href="about.html"> <i class="fas fa-user word"></i> <span>about</span> </a>
         <a href="portfolio.html"> <i class="fas fa-briefcase word"></i> <span>Projects</span> </a>
-
         <a href="contact.html"> <i class="fas fa-address-book word"></i> <span>contact</span> </a>
     </nav>
 
@@ -65,17 +64,14 @@
         </div>
 
         <div class="content swup" id="transition-fade">
-
             <div>
-
-                <h3 id="animation">hi, i am Aniket krishna Saste</h3>
-
+                <h3 id="animation" class="letters">hi, i am Aniket krishna Saste</h3>
             </div>
             <span class="typing-demo">Full Stack (MERN)
                 developer</span>
+
             <p> Passionate about new technologies and implementing it to make sure I create
                 some values in ever growing business world in india and beyond.</p>
-
 
             <a id="aboutMe" href="/about.html" class="btn aboutme slideTop"> about me <i class="fas fa-user"></i> </a>
         </div>
@@ -264,22 +260,27 @@
         ScrollReveal({ reset: true });
         ScrollReveal().reveal('.slideTop', slideTop);
 
-        //text animation
-        anime.timeline({ loop: false })
-            .add({
-                targets: '.ml15 .word',
-                scale: [14, 1],
-                opacity: [0, 1],
-                easing: "easeOutCirc",
-                duration: 800,
-                delay: (el, i) => 800 * i
-            }).add({
-                targets: '.ml15',
-                opacity: 100,
-                duration: 800,
-                easing: "easeOutExpo",
-                delay: 200
-            });
+        //icon animation
+        setTimeout(() => {
+            anime.timeline({ loop: false })
+                .add({
+                    targets: '.ml15 .word',
+                    scale: [15, 1],
+                    opacity: [0, 1],
+                    easing: "easeOutCirc",
+                    duration: 800,
+                    delay: (el, i) => 800 * i
+                }).add({
+                    targets: '.ml15',
+                    opacity: 100,
+                    duration: 1000,
+                    easing: "easeOutExpo",
+                    delay: 1000
+                });
+        }, 1500);
+
+
+
     </script>
 </body>
 <!-- <script src="script.js"></script> -->

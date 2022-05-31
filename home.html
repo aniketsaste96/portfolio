@@ -31,10 +31,14 @@
             margin: 0;
         }
     </style>
+
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
     <!-- PAGE LOADER : PLACE RIGHT AFTER BODY TAG -->
     <div class="page-loader">
         <div class="spinner"></div>
@@ -73,7 +77,9 @@
             <p> Passionate about new technologies and implementing it to make sure I create
                 some values in ever growing business world in india and beyond.</p>
 
-            <a id="aboutMe" href="/about.html" class="btn aboutme slideTop"> about me <i class="fas fa-user"></i> </a>
+            <button id="aboutMe" class="btn aboutme slideTop" type="submit" onclick="Play()"> about
+                me <i class="fas fa-user"></i>
+            </button>
         </div>
 
     </section>
@@ -260,9 +266,27 @@
         ScrollReveal({ reset: true });
         ScrollReveal().reveal('.slideTop', slideTop);
 
+        async function Play() {
+            //credits
+            //“Sound effects obtained from https://www.zapsplat.com“
+            var audio = new Audio("audio/audio_2.mp3");
+            await audio.play();
+            change()
+        }
+        function change() {
+
+            setTimeout(() => {
+                window.location.href = "/about.html"
+
+            }, 1000)
+        }
+
+
         //icon animation
         setTimeout(() => {
+
             anime.timeline({ loop: false })
+
                 .add({
                     targets: '.ml15 .word',
                     scale: [20, 1],
@@ -270,14 +294,20 @@
                     easing: "easeOutCirc",
                     duration: 800,
                     delay: (el, i) => 350 * i
+
                 }).add({
                     targets: '.ml15',
                     opacity: 100,
                     duration: 1000,
                     easing: "easeOutExpo",
-                    delay: 1100
+                    delay: 1100,
+
                 });
+
+
         }, 1000);
+
+
 
 
 

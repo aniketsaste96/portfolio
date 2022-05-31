@@ -1047,3 +1047,7 @@ canvas {
   transition: 2s;
   filter: drop-shadow(0 -6mm 4mm rgb(54, 51, 51));
 } */
+
+button {
+  cursor: pointer;
+}

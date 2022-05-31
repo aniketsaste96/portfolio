@@ -1093,7 +1093,7 @@ button {
 .bar {
   width: 7px;
   height: 50px;
-  background: #fff;
+  background: rgb(223, 111, 134);
   display: inline-block;
   transform-origin: bottom center;
   border-top-right-radius: 20px;

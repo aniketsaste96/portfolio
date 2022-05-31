@@ -995,6 +995,7 @@ canvas {
   position: absolute;
   background: black;
   z-index: 999999000;
+  /* wrong pratice change later  */
 }
 .page-loader .txt {
   color: white;
